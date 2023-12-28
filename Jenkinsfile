@@ -1,6 +1,11 @@
 pipeline {
     agent any
 
+    tools {
+        maven 'maven'
+        jdk 'openjdk-8'
+    }
+
     options {
         timestamps()
         timeout(time: 15, unit: 'MINUTES') 
@@ -12,12 +17,19 @@ pipeline {
     }
 
 
+
     stages {
-        stage('Build and Deploy') {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+        stage('Maven Deploy(build -> test -> package -> publish)') {
             steps {
                 script {
-                    checkout scm
-                    sh 'mvn clean install'
+                    withMaven(mavenSettingsConfig: 'artifactory-settings') { 
+                        sh 'mvn install'
+                    }
                 }
             }
         }
