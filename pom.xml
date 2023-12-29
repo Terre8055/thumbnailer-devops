@@ -14,12 +14,7 @@
             <artifactId>picocli</artifactId>
             <version>3.9.6</version>
         </dependency>
-        
-        <dependency>
-            <groupId>com.terrygilliam</groupId>
-            <artifactId>terrygilliam</artifactId>
-            <version>3.5-SNAPSHOT</version>
-        </dependency>
+ 
        
     </dependencies>
 
