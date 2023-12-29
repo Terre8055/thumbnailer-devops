@@ -16,8 +16,8 @@
         </dependency>
         
         <dependency>
-            <groupId>com.terrygilliam.imageio</groupId>
-            <artifactId>imageio-tiff</artifactId>
+            <groupId>com.terrygilliam</groupId>
+            <artifactId>terrygilliam</artifactId>
             <version>3.5</version>
         </dependency>
        
