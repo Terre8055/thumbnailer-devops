@@ -17,7 +17,7 @@
         <dependency>
             <groupId>com.terrygilliam</groupId>
             <artifactId>terrygilliam</artifactId>
-            <version>3.5-SNAPSHOT</version>
+            <version>3.5</version>
         </dependency> 
        
     </dependencies>
