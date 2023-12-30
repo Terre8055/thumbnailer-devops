@@ -5,7 +5,7 @@ WORKDIR /thumbnailer
 
 COPY . /thumbnailer
 
-COPY /thumbnailer/entrypoint.sh .
+COPY entrypoint.sh /thumbnailer
 
 # Add entry-point.sh
 COPY /thumbnailer/entrypoint.sh /thumbnailer/target/entrypoint.sh
