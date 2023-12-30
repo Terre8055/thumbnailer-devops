@@ -28,7 +28,7 @@ pipeline {
             steps {
                 script {
                     withMaven(mavenSettingsConfig: 'artifactory-settings') { 
-                        sh 'mvn install'
+                        sh 'mvn clean install -U'
                     }
                 }
             }
