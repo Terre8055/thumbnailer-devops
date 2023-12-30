@@ -1,4 +1,5 @@
-FROM openjdk:8-jre
+FROM eclipse-temurin:11
+
 
 WORKDIR /thumbnailer
 
