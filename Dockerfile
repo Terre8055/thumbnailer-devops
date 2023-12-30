@@ -5,6 +5,8 @@ WORKDIR /thumbnailer
 
 COPY . /thumbnailer
 
+COPY /thumbnailer/entrypoint.sh .
+
 # Add entry-point.sh
 COPY /thumbnailer/entrypoint.sh /thumbnailer/target/entrypoint.sh
 RUN chmod +x /thumbnailer/target/entrypoint.sh
