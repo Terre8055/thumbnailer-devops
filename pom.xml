@@ -14,13 +14,11 @@
             <artifactId>picocli</artifactId>
             <version>3.9.6</version>
         </dependency>
-        <!--
         <dependency>
             <groupId>com.terrygilliam.imageio</groupId>
             <artifactId>imageio-tiff</artifactId>
             <version>3.5</version>
         </dependency>
-        -->
     </dependencies>
 
     <build>
@@ -36,7 +34,6 @@
                 <id>default</id>
                 <goals>
                     <goal>build</goal>
-                    <goal>push</goal>
                 </goals>
                 </execution>
             </executions>
